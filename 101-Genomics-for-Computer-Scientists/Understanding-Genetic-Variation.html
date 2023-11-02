@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"tritium.cloud","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Hey you, you&#39;re finally awake">
+  <meta name="description" content="Part A: Understanding Genetic Variation Some Causes of Genetic Variation  Sponatneous mutation (自发突变): during DNA replication  Hydrolytic damage Oxidative damage  Chemicl damage: caused by chemicals">
 <meta property="og:type" content="website">
-<meta property="og:title" content="TRITIUM CLOUD 氚">
-<meta property="og:url" content="http://tritium.cloud/tags/algorithm/index.html">
+<meta property="og:title" content="Understanding Genetic Variation">
+<meta property="og:url" content="http://tritium.cloud/101-Genomics-for-Computer-Scientists/Understanding-Genetic-Variation.html">
 <meta property="og:site_name" content="TRITIUM CLOUD 氚">
-<meta property="og:description" content="Hey you, you&#39;re finally awake">
+<meta property="og:description" content="Part A: Understanding Genetic Variation Some Causes of Genetic Variation  Sponatneous mutation (自发突变): during DNA replication  Hydrolytic damage Oxidative damage  Chemicl damage: caused by chemicals">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-11-02T18:32:19.000Z">
+<meta property="article:modified_time" content="2023-11-02T21:43:18.531Z">
 <meta property="article:author" content="Ao Zhang">
 <meta property="article:tag" content="Computer Science, Machine Learning">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://tritium.cloud/tags/algorithm/">
+<link rel="canonical" href="http://tritium.cloud/101-Genomics-for-Computer-Scientists/Understanding-Genetic-Variation">
 
 
 <script id="page-configurations">
@@ -44,7 +46,8 @@
   };
 </script>
 
-  <title>Tag: algorithm | TRITIUM CLOUD 氚</title>
+  <title>Understanding Genetic Variation | TRITIUM CLOUD 氚
+</title>
   
 
 
@@ -160,54 +163,185 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
-          <div class="content tag">
+          <div class="content page posts-expand">
             
 
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Understanding Genetic Variation
+</h1>
+
+<div class="post-meta">
   
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">algorithm
-          <small>Tag</small>
-        </h2>
-      </div>
+
+</div>
+
+</header>
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
+      
+      
+      <div class="post-body">
+          <h1 id="part-a-understanding-genetic-variation">Part A: Understanding
+Genetic Variation</h1>
+<h2 id="some-causes-of-genetic-variation">Some Causes of Genetic
+Variation</h2>
+<ul>
+<li><strong>Sponatneous mutation (自发突变)</strong>: during DNA
+replication
+<ul>
+<li>Hydrolytic damage</li>
+<li>Oxidative damage</li>
+</ul></li>
+<li><strong>Chemicl damage</strong>: caused by chemicals
+<ul>
+<li>Radiation (UV, X-ray, gamma-ray)</li>
+<li>Chemicals (e.g. cigarette smoke)</li>
+</ul></li>
+</ul>
+<h2 id="types-of-genetic-variation">Types of Genetic Variation</h2>
+<h3 id="small-scale-variation">Small-scale variation</h3>
+<p><strong>Single base-pair substitution</strong> (Transition vs.
+Transversion)</p>
+<ul>
+<li><strong>Transition</strong>: purine to purine (A &lt;-&gt; G) or
+pyrimidine to pyrimidine (C &lt;-&gt; T)</li>
+<li><strong>Transversion</strong>: purine to pyrimidine or pyrimidine to
+purine (A &lt;-&gt; C, A &lt;-&gt; T, G &lt;-&gt; C, G &lt;-&gt; T)</li>
+</ul>
+<p><strong>SNV (Single nucleotide variant)</strong> (Synonymous vs.
+Non-synonymous)</p>
+<ul>
+<li><strong>Synonymous</strong>: no change in amino acid (ACC (Thr)
+-&gt; ACA (Thr))</li>
+<li><strong>Non-synonymous</strong>: change in amino acid
+<ul>
+<li><strong>Missense</strong>: change in amino acid (AGT (Ser) -&gt; AGG
+(Arg))</li>
+<li><strong>Nonsense</strong>: change in amino acid to stop codon (TGG
+(Trp) -&gt; TGA (Stop))</li>
+<li><strong>Stop-loss</strong>: stop codon to amino acid (TGA (Stop)
+-&gt; TGC (Cys))</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong>Conserative vs. Non-conservative</strong></p>
+<ul>
+<li><strong>Conservative</strong>: Same Chemical class</li>
+<li><strong>Non-conservative</strong>: Different Chemical class</li>
+</ul>
+</blockquote>
+<p><strong>Splicing Mutation</strong></p>
+<ul>
+<li>e.g. skipping of exon, retention of intron, extension of exon</li>
+<li>web tools to predict splicing mutation: <a
+target="_blank" rel="noopener" href="http://www.cbcb.umd.edu/software/GeneSplicer/">GeneSplicer</a>, <a
+target="_blank" rel="noopener" href="http://www.umd.be/HSF/">Human Splicing Finder</a></li>
+</ul>
+<p><strong>Small insertion/deletion (indel) (&lt;50 bp)</strong></p>
+<ul>
+<li><strong>Frameshift Mutation</strong>: insertion/deletion of a number
+of nucleotides
+<ul>
+<li>Lead to premature stop codon</li>
+<li>Degradation of mRNA by nonsense-mediated decay (NMD)</li>
+<li>Sometimes, translate to a longer protein, which could infect the
+function of the normal protein</li>
+</ul></li>
+</ul>
+<h3 id="large-scale-variation">Large-scale variation</h3>
+<p><strong>Structural variation (&gt;50 bp)</strong> (balanced vs.
+unbalanced)</p>
+<ul>
+<li>Types: <strong>Insertion</strong>, <strong>Deletion</strong>,
+<strong>Duplication</strong>, <strong>Inversion</strong>,
+<strong>Translocation</strong></li>
+<li>Can cause copy number variations</li>
+<li>Effects on gene expression and protein function</li>
+</ul>
+<h2 id="effects-of-mutation">Effects of Mutation</h2>
+<p>A change in the sequence of the gene:</p>
+<ul>
+<li>Gain of function</li>
+<li>Loss of function</li>
+<li>Altered function</li>
+</ul>
+<p>Change in gene expression levels:</p>
+<ul>
+<li>Copy number variation</li>
+<li>Change in gene regulation</li>
+<li>Premature termination codon</li>
+</ul>
+<h1 id="b-dna-damage-and-repair">1.5B DNA Damage and Repair</h1>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><p>DNA repair is critical for maintaining genomic integrity and
+suppressing diseases like cancer. Defects in DNA repair can have severe
+consequences.</p></li>
+<li><p>There are several excision repair pathways that remove DNA
+lesions by cutting out and replacing damaged sections of DNA. These
+include direct reversal, base excision repair, and nucleotide excision
+repair.</p></li>
+<li><p>If DNA lesions are not repaired before replication, the cell uses
+DNA damage tolerance mechanisms like translesion synthesis polymerases
+to continue replicating the DNA, often resulting in mutations.</p></li>
+<li><p>There is redundancy across repair pathways - if one fails,
+another can often compensate. Targeting a single repair pathway is
+usually not effective for cancer therapy. Detailed Content
+Outline:</p></li>
+</ul>
+<h2 id="types-of-dna-damage">Types of DNA damage</h2>
+<p><strong>Most common forms</strong>: single strand breaks, mismatches,
+damaged bases, double strand breaks, crosslinks</p>
+<p><strong>Major sources</strong>: radiation, oxidative species,
+methylation, etc.</p>
+<h2 id="dna-repair-pathways">DNA repair pathways</h2>
+<h3 id="direct-reversal">Direct reversal</h3>
+<ul>
+<li>Photoreactivation (not in humans)</li>
+<li>Removal of O6-methylguanine lesion by MGMT</li>
+</ul>
+<h3 id="base-excision-repair">Base excision repair</h3>
+<ul>
+<li>Recognition and removal of damaged base by DNA glycosylase</li>
+<li>Incision, repair synthesis, and ligation</li>
+</ul>
+<h3 id="nucleotide-excision-repair">Nucleotide excision repair</h3>
+<ul>
+<li>Global genome vs. transcription-coupled</li>
+<li>Recognition, unwinding, incision, excision, repair synthesis, and
+ligation</li>
+<li>Consequences when defective - XP and CS syndromes</li>
+</ul>
+<h3 id="dna-damage-tolerance">DNA damage tolerance</h3>
+<ul>
+<li>Translesion synthesis polymerases</li>
+<li>Allow continued replication across lesions</li>
+<li>Prone to introducing mutations</li>
+</ul>
+<blockquote>
+<ul>
+<li>Interconnections and redundancy across repair pathways</li>
+</ul>
+</blockquote>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-06-01T17:17:19+01:00"
-              content="2022-06-01">
-          06-01
-        </time>
       </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/06/01/tree/" itemprop="url">
-            <span itemprop="name">Tree</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+      
+      
+      
     </div>
-  </div>
-  
-  
-  
+    
 
-  
-
+    
+    
+    
 
 
           </div>
@@ -257,6 +391,9 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#part-a-understanding-genetic-variation"><span class="nav-number">1.</span> <span class="nav-text">Part A: Understanding
+Genetic Variation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#some-causes-of-genetic-variation"><span class="nav-number">1.1.</span> <span class="nav-text">Some Causes of Genetic
+Variation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#types-of-genetic-variation"><span class="nav-number">1.2.</span> <span class="nav-text">Types of Genetic Variation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#small-scale-variation"><span class="nav-number">1.2.1.</span> <span class="nav-text">Small-scale variation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#large-scale-variation"><span class="nav-number">1.2.2.</span> <span class="nav-text">Large-scale variation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#effects-of-mutation"><span class="nav-number">1.3.</span> <span class="nav-text">Effects of Mutation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#b-dna-damage-and-repair"><span class="nav-number">2.</span> <span class="nav-text">1.5B DNA Damage and Repair</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#summary"><span class="nav-number">2.1.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#types-of-dna-damage"><span class="nav-number">2.2.</span> <span class="nav-text">Types of DNA damage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dna-repair-pathways"><span class="nav-number">2.3.</span> <span class="nav-text">DNA repair pathways</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#direct-reversal"><span class="nav-number">2.3.1.</span> <span class="nav-text">Direct reversal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#base-excision-repair"><span class="nav-number">2.3.2.</span> <span class="nav-text">Base excision repair</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nucleotide-excision-repair"><span class="nav-number">2.3.3.</span> <span class="nav-text">Nucleotide excision repair</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dna-damage-tolerance"><span class="nav-number">2.3.4.</span> <span class="nav-text">DNA damage tolerance</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
