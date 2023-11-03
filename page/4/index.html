@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#282a36">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/tritiumlogo-260x260.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tritiumlogo-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tritiumlogo-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#282a36">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tritium.cloud","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Hey you, you&#39;re finally awake">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TRITIUM CLOUD 氚">
+<meta property="og:url" content="http://tritium.cloud/page/4/index.html">
+<meta property="og:site_name" content="TRITIUM CLOUD 氚">
+<meta property="og:description" content="Hey you, you&#39;re finally awake">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Ao Zhang">
+<meta property="article:tag" content="Computer Science, Machine Learning">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://tritium.cloud/page/4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>TRITIUM CLOUD 氚</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <script src="https://fastly.jsdelivr.net/gh/Billyzhang1229/hexo-live2d-widget@v1.0.5/autoload.js"></script>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">TRITIUM CLOUD 氚</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">By Ao Zhang</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-beta">
+
+    <a href="http://beta.tritium.cloud/" rel="noopener" target="_blank"><i class="fa fa-umbrella-beach fa-fw"></i>Beta</a>
+
+  </li>
+        <li class="menu-item menu-item-genomics">
+
+    <a href="/tags/genomics/" rel="section"><i class="fa fa-dna fa-fw"></i>Genomics</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/Billyzhang1229" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://tritium.cloud/2023/10/29/Gene-Structure-and-Expression/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ao Zhang">
+      <meta itemprop="description" content="Hey you, you're finally awake">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TRITIUM CLOUD 氚">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/29/Gene-Structure-and-Expression/" class="post-title-link" itemprop="url">Gene Structure and Expression</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-10-29 18:00:07" itemprop="dateCreated datePublished" datetime="2023-10-29T18:00:07Z">2023-10-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-11-03 00:23:30" itemprop="dateModified" datetime="2023-11-03T00:23:30Z">2023-11-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="gene-structure-and-expression">Gene Structure and
+Expression</h1>
+<h2
+id="how-is-information-stored-in-dna-sequences-converted-into-proteins">How
+is information stored in DNA sequences converted into proteins?</h2>
+<ul>
+<li><strong>Activation</strong></li>
+<li><strong>Transcription</strong></li>
+<li><strong>Processing</strong></li>
+<li><strong>Translation</strong></li>
+</ul>
+<h2 id="gene-transcription">Gene transcription</h2>
+<ul>
+<li><strong>Transcription</strong>: the process of copying a gene
+sequence into a sequence of RNA</li>
+<li><strong>RNA polymerase</strong>: an enzyme that synthesizes RNA from
+a DNA template
+<ul>
+<li><strong>RNA polymerase I</strong>: transcribes <strong>rRNA</strong>
+genes</li>
+<li><strong>RNA polymerase II</strong>: transcribes
+<strong>protein-coding</strong> genes, <strong>snRNA</strong> genes, and
+others</li>
+<li><strong>RNA polymerase III</strong>: transcribes
+<strong>tRNA</strong> genes, <strong>5S rRNA</strong> genes, and other
+small RNAs</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>rRNAs are named based on their S values (e.g. 18S, 28S, 5.8S, 5S,
+etc.)</p>
+<p>larger S value = larger molecular weight = larger size = slower
+migration</p>
+</blockquote>
+<h3 id="transcription-initiation">Transcription Initiation</h3>
+<p>RNA polymerase binds to the promoter region of the gene, which is
+located <a href="#upstream">upstream</a> of the transcription start site
+(TSS). The promoter region contains the TATA box, which is a DNA
+sequence that indicates where transcription should begin. Proteins
+called transcription factors bind to the TATA box and help position RNA
+polymerase.</p>
+<ul>
+<li><div id="upstream">
+<b>Upstream (上游)</b> means towards the 5' end, downstream(下游) means
+towards the 3' end
+</div></li>
+<li><strong>Promoter (起动子)</strong>: a region of DNA that initiates
+transcription of a particular gene</li>
+<li><strong>TATA box</strong>: Repeated sequence of TATAA or TATAAA,
+located 25-35 base pairs upstream of the transcription start site</li>
+</ul>
+<h3 id="transcription-elongation">Transcription Elongation</h3>
+<p>RNA polymerase moves along the DNA template strand in the 3' to 5'
+direction, synthesizing RNA in the 5' to 3' direction. The RNA
+transcript is complementary to the DNA template strand and identical to
+the DNA coding strand, except that the RNA transcript contains uracil
+(U) instead of thymine (T).</p>
+<ul>
+<li><strong>Template strand</strong>: the strand of DNA that is copied
+during the synthesis of mRNA</li>
+<li><strong>Coding strand</strong>: the strand of DNA that is not used
+as a template during the synthesis of mRNA</li>
+<li><strong>CTD (C-terminal domain)</strong>: the C-terminal domain of
+RNA polymerase II. Facilitates the RNA adds the poly(A) tail to the 3'
+end of the mRNA transcript.</li>
+</ul>
+<h3 id="transcription-termination">Transcription Termination</h3>
+<p>RNA polymerase reaches the end of the gene and detaches from the DNA
+template strand. The RNA transcript is released and the DNA double helix
+reforms.</p>
+<h3 id="rna-processing">RNA Processing</h3>
+<p>DNA -&gt; add m7G cap to 5' end -&gt; add poly(A) tail to 3' end
+-&gt; primary transcript (pre-mRNA) -&gt; remove introns, splice exons
+-&gt; mature mRNA</p>
+<ul>
+<li><strong>5' cap</strong>: a modified guanine nucleotide added to the
+5' end of the mRNA transcript to protect it from exonucleases attack
+(degradation) and to help the ribosome bind to the mRNA</li>
+<li><strong>Poly(A) tail</strong>: a string of adenine nucleotides added
+to the 3' end of the mRNA transcript to protect it from exonucleases
+attack (degradation) and to help the ribosome bind to the mRNA</li>
+</ul>
+<h4 id="pre-mrna-splicing">Pre-mRNA splicing</h4>
+<ul>
+<li><strong>Splice donor site</strong>: the 5' end of an intron</li>
+<li><strong>Splice acceptor site</strong>: the 3' end of an intron</li>
+<li><strong>Branch site</strong>: located close to the splice acceptor
+site, initiates the splicing reaction</li>
+</ul>
+<h3 id="simple-vs.-complex-eukaryotes">Simple vs. Complex
+Eukaryotes</h3>
+<ul>
+<li><strong>Simple transcription</strong>: A DNA sequence that contains
+protein-encoding exons separated by introns and upstream control
+regions. The primary transcript produced from a simple transcription
+unit is processed to yield a single type of mRNA, encoding a single
+protein. Simple transcription units are rare in humans</li>
+<li><strong>Complex transcription</strong>: Produce primary RNA
+transcripts that can be processed in more than one way, leading to
+formation of mRNAs containing different combinations of exons. Each
+alternative mRNA is translated into a single polypeptide, with
+translation usually initiating at the first AUG in the mRNA 2.</li>
+</ul>
+<h3 id="alternative-splicing">Alternative Splicing</h3>
+<ul>
+<li><strong>Alternative splicing</strong>: the process of generating
+different mature mRNAs from the same primary transcript by splicing
+together different combinations of exons</li>
+</ul>
+<h2 id="gene-translation">Gene Translation</h2>
+<h3 id="rna-side">RNA side</h3>
+<p>The mRNA is read in sets of three nucleotides called codons.</p>
+<ul>
+<li>Each codon specifies a particular amino acid</li>
+<li>Most amino acids are specified by more than one codon</li>
+<li>Only two amino acids are specified by a single codon (Met and
+Trp)</li>
+</ul>
+<blockquote>
+<p>e.g. A mRNA sequence of AUGCCCGAUGGAGUAGCAGCUGA would be read as
+AUG-CCC-GAU-GGA-GUA-GCA-GCU-GA</p>
+</blockquote>
+<ul>
+<li><p><strong>start codon</strong>: <strong>AUG</strong> (In most
+cases, the first AUG is used as the start codon)</p></li>
+<li><p><strong>Stop codons</strong>: <strong>UAA, UAG,
+UGA</strong></p></li>
+</ul>
+<p>Three reading frames - <strong>Reading frame</strong>: the way a
+cell's mRNA-translating machinery groups the mRNA nucleotides into
+codons</p>
+<blockquote>
+<p>e.g. Theoretically, the mRNA sequence AUGCCCGAUGGAGUAGCAGCUGA could
+be read in three different reading frames: -
+AUG-CCC-GAU-GGA-GUA-GCA-GCU-GA - A-UGC-CCG-AUG-GAG-UAG-CAG-CUG-A -
+AU-GCC-CGA-UGG-AGU-AGC-AGC-UGA</p>
+</blockquote>
+<h3 id="ribosome">Ribosome</h3>
+<ul>
+<li><strong>Ribosome</strong>: a complex of RNA and protein that
+catalyzes the synthesis of polypeptides
+<ul>
+<li>Large and small subunits</li>
+</ul></li>
+</ul>
+<h3 id="trna">tRNA</h3>
+<p>tRNAs are small RNA molecules that carry amino acids to the ribosome
+for polymerization into a polypeptide. Each tRNA has a three-nucleotide
+sequence called an anticodon that is complementary to a codon in the
+mRNA. The tRNA also carries the amino acid that is specified by the
+codon.</p>
+<ul>
+<li>the anticodon on the tRNA base-pairs with the codon on the mRNA &gt;
+e.g. The tRNA with the anticodon 5'-GCC-3' would bind to the mRNA codon
+3'-CGG-5'</li>
+</ul>
+<h3 id="translation">Translation</h3>
+<p>Ribosomes bind to the mRNA and move along it in the 5' to 3'
+direction. As the ribosome moves along the mRNA, each tRNA binds to the
+mRNA and delivers its amino acid to the ribosome. The ribosome catalyzes
+the formation of a peptide bond between the amino acids, forming a
+polypeptide chain. The ribosome continues to move along the mRNA, adding
+amino acids to the polypeptide chain until it reaches a stop codon.</p>
+<ul>
+<li><strong>Peptide bond</strong>: a covalent bond between the carboxyl
+group of one amino acid and the amino group of another amino acid</li>
+<li><strong>Polypeptide</strong>: a chain of amino acids linked by
+peptide bonds</li>
+</ul>
+<h2 id="protein">Protein</h2>
+<h3 id="protein-structure">Protein structure</h3>
+<ul>
+<li><strong>Amino acid</strong>: the building blocks of proteins
+<ul>
+<li>Can polymerize (by eliminating water)</li>
+<li>CO-NH bond (peptide bond)</li>
+</ul></li>
+</ul>
+<blockquote>
+<ul>
+<li>Numbering
+<ul>
+<li>Dipetide: 2 amino acids</li>
+<li>Tripeptide: 3 amino acids<br />
+</li>
+<li>Oligopeptide: 4-10 amino acids</li>
+<li>Polypeptide: &gt;10 amino acids</li>
+</ul></li>
+</ul>
+</blockquote>
+<p>Proteins consist of one or more polypeptide chains</p>
+<p>Types of amino acids - <strong>Nonpolar amino acids</strong>:
+hydrophobic - <strong>Polar amino acids</strong>: hydrophilic -
+<strong>Acidic amino acids</strong>: negatively charged - <strong>Basic
+amino acids</strong>: positively charged</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Ao Zhang</p>
+  <div class="site-description" itemprop="description">Hey you, you're finally awake</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/billyzhang1229" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;billyzhang1229" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ao.zhang@kcl.ac.uk" title="E-Mail → mailto:ao.zhang@kcl.ac.uk" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=rZBHlWQ6Lzt3Tj6s5c_b7muHM7QOI9RB2Bf8-u5SWxs&co=222222&cmo=d8b647&cmn=35dd6c&ct=808080'></script>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fas fa-terminal"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ao Zhang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+    </div>
+</body>
+</html>
