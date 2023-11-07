@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#282a36">
-<meta name="generator" content="Hexo 6.2.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/tritiumlogo-260x260.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/tritiumlogo-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/tritiumlogo-16x16.png">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="Gene Structure and Expression How is information stored in DNA sequences converted into proteins?  Activation Transcription Processing Translation  Gene transcription  Transcription: the process of co">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-29T18:00:07.000Z">
-<meta property="article:modified_time" content="2023-11-03T00:23:30.023Z">
+<meta property="article:modified_time" content="2023-11-07T12:22:59.255Z">
 <meta property="article:author" content="Ao Zhang">
 <meta property="article:tag" content="Genomics">
 <meta property="article:tag" content="Gene">
@@ -133,7 +133,7 @@
   </li>
         <li class="menu-item menu-item-beta">
 
-    <a href="http://beta.tritium.cloud/" rel="noopener" target="_blank"><i class="fa fa-umbrella-beach fa-fw"></i>Beta</a>
+    <a href="https://beta.tritium.cloud/" rel="noopener" target="_blank"><i class="fa fa-umbrella-beach fa-fw"></i>Beta</a>
 
   </li>
         <li class="menu-item menu-item-genomics">
@@ -202,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-11-03 00:23:30" itemprop="dateModified" datetime="2023-11-03T00:23:30Z">2023-11-03</time>
+                <time title="Modified: 2023-11-07 12:22:59" itemprop="dateModified" datetime="2023-11-07T12:22:59Z">2023-11-07</time>
               </span>
 
           
@@ -349,9 +349,12 @@ cell's mRNA-translating machinery groups the mRNA nucleotides into
 codons</p>
 <blockquote>
 <p>e.g. Theoretically, the mRNA sequence AUGCCCGAUGGAGUAGCAGCUGA could
-be read in three different reading frames: -
-AUG-CCC-GAU-GGA-GUA-GCA-GCU-GA - A-UGC-CCG-AUG-GAG-UAG-CAG-CUG-A -
-AU-GCC-CGA-UGG-AGU-AGC-AGC-UGA</p>
+be read in three different reading frames:</p>
+<ul>
+<li>AUG-CCC-GAU-GGA-GUA-GCA-GCU-GA</li>
+<li>A-UGC-CCG-AUG-GAG-UAG-CAG-CUG-A</li>
+<li>AU-GCC-CGA-UGG-AGU-AGC-AGC-UGA</li>
+</ul>
 </blockquote>
 <h3 id="ribosome">Ribosome</h3>
 <ul>
@@ -407,10 +410,13 @@ peptide bonds</li>
 </ul>
 </blockquote>
 <p>Proteins consist of one or more polypeptide chains</p>
-<p>Types of amino acids - <strong>Nonpolar amino acids</strong>:
-hydrophobic - <strong>Polar amino acids</strong>: hydrophilic -
-<strong>Acidic amino acids</strong>: negatively charged - <strong>Basic
-amino acids</strong>: positively charged</p>
+<p>Types of amino acids</p>
+<ul>
+<li><strong>Nonpolar amino acids</strong>: hydrophobic</li>
+<li><strong>Polar amino acids</strong>: hydrophilic</li>
+<li><strong>Acidic amino acids</strong>: negatively charged</li>
+<li><strong>Basic amino acids</strong>: positively charged</li>
+</ul>
 
     </div>
 
@@ -513,12 +519,12 @@ Eukaryotes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" h
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -674,6 +680,61 @@ window.addEventListener('pjax:success', () => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

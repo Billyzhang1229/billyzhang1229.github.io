@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#282a36">
-<meta name="generator" content="Hexo 6.2.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/tritiumlogo-260x260.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/tritiumlogo-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/tritiumlogo-16x16.png">
@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"tritium.cloud","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Read Length: the length of a DNA sequence that is read by a sequencing machine Read Depth: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are reads t">
+  <meta name="description" content="Read Length: the length of a DNA sequence that is read by a sequencing machine   Read Depth: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are read">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Genotyping and gene expression analysis: Sanger to high throughput sequencing (HTS)">
 <meta property="og:url" content="http://tritium.cloud/101-Genomics-for-Computer-Scientists/Genotyping-and-gene-expression-analysis-Sanger-to-high-throughput-sequencing-HTS.html">
 <meta property="og:site_name" content="TRITIUM CLOUD 氚">
-<meta property="og:description" content="Read Length: the length of a DNA sequence that is read by a sequencing machine Read Depth: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are reads t">
+<meta property="og:description" content="Read Length: the length of a DNA sequence that is read by a sequencing machine   Read Depth: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are read">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-10-31T09:58:08.000Z">
-<meta property="article:modified_time" content="2023-10-31T10:00:38.484Z">
+<meta property="article:modified_time" content="2023-11-03T00:51:13.797Z">
 <meta property="article:author" content="Ao Zhang">
 <meta property="article:tag" content="Computer Science, Machine Learning">
 <meta name="twitter:card" content="summary">
@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-beta">
 
-    <a href="http://beta.tritium.cloud/" rel="noopener" target="_blank"><i class="fa fa-umbrella-beach fa-fw"></i>Beta</a>
+    <a href="https://beta.tritium.cloud/" rel="noopener" target="_blank"><i class="fa fa-umbrella-beach fa-fw"></i>Beta</a>
 
   </li>
         <li class="menu-item menu-item-genomics">
@@ -190,8 +190,21 @@
       
       <div class="post-body">
           <ul>
-<li><strong>Read Length</strong>: the length of a DNA sequence that is read by a sequencing machine</li>
-<li><strong>Read Depth</strong>: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are reads that are identical to other reads)</li>
+<li>
+<p><strong>Read Length</strong>: the length of a DNA sequence that is read by a sequencing machine</p>
+</li>
+<li>
+<p><strong>Read Depth</strong>: the number of times a DNA sequence is read by a sequencing machine (remove PCR duplicates, which are reads that are identical to other reads)</p>
+</li>
+<li>
+<p><strong>Coverage</strong>: the average number of reads that align to, or “cover”, a given nucleotide in the reference genome during the sequencing process</p>
+</li>
+<li>
+<p><strong>Deletion</strong>: When there is a deletion in the DNA sequence, there will be a gap in the alignment</p>
+</li>
+<li>
+<p><strong>Adapter Contamination</strong>: Adapter contamination occurs when the adapter sequence is accidentally sequenced along with the DNA fragment. This can happen when the adapter is not properly removed during the library preparation process. Adapter contamination can be detected by looking for the adapter sequence in the reads.</p>
+</li>
 </ul>
 
       </div>
@@ -266,12 +279,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -427,6 +440,61 @@ window.addEventListener('pjax:success', () => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
